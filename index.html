@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Pontos Turísticos, turismo, lembranças, paisagens">
+    <meta name="description" content="Colecione lembranças de momentos inesquecíveis na sua vida. Escolha seu destino com as dicas de pontos turísticos do nosso site.">
+    <!-- index pra página aparecer nos resultados de buscas / follow pros links dela aparecerem nas buscas -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luciene Lima">
+
+    <title>The Dreams of Paradise</title>
+
+     <!-- Incluindo o Bootstrap 5 via CDN (copiando os links)-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ícone na aba -->
+    <link rel="shortcut icon" href="imagens/rota.png" type="image/x-icon">
+
+    <!-- Linkar os ícones do instagram, youtube, github...: CDN-->
+    <script src="https://kit.fontawesome.com/7d79481767.js" crossorigin="anonymous"></script>
+
+    <!-- Linkar css -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Linkar responsivo css -->
+    <link rel="stylesheet" href="css/responsivo.css">
+    
+</head>
+
+
+<body class="bg-light">
+
+    <!-- NAVBAR (Barra de navegação) -->
+
+    <!-- Navbar (Barra de navegação) -->
+    <!-- navbar-expand- = a partir de qntos px pro menu se expandir -->
+    <!-- navbar-expand-lg = 992px largura; navbar-expand-md = 768px-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light bg-secundario mt-3 text">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand text-primary display-2" href="#">TDP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0"> mb- margem botton ; mb-lg-0 pra margem botton de telas lg de 0 -->
+           <ul class="navbar-nav me-auto position-fix">
+            <li class="nav-item">
+              <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#destinos">Touristic destinations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#história">Lodging</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#visitados">Itineraries</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#red">Social networks</a>
+            </li>
+
+            <!-- <li class="nav-item"> 
+              <a class="nav-link text-primary" href="#">Mapa</a>
+            </li>-->
+
+            <!-- <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>-->
+
+            <!-- <li class="nav-item"> 
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>-->
+          </ul>
+
+          <!-- <form class="d-flex"> 
+            <input class="form-control me-2" type="search" placeholder="Digite o produto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Título e subtítulo -->
+
+    <!-- Ícone de um avião antes e depois do título -->
+    <h1 class="text-center text-primary mt-4 mb-2"> 
+      The Dreams of Paradise
+
+      <img class="img_avião avião_movimento" src="imagens/aviao.png" alt="imagem de um avião">
+    </h1>
+    
+    <!-- Subtítulo-->    
+    <h3 class="text-center mt-1 mb-5"></h3>
+
+  
+  
+   
+    <!-- CARROSSEL / SLIDES-->
+
+    <div class="container w-10 h-auto">
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/cristo.webp" class="d-block w-100" alt="Pão de Açúcar">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cristo Redentor</h5>
+              <p>Rio de Janeiro Brazil</p>
+            </div>
+          </div>
+
+          <!-- Ilha de Jeju, na Coreia do Sul. -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/Namsan_Tower - Copia.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Namsan Tower</h5>
+              <p>Seoul, South Korea.</p>
+            </div>
+          </div>
+
+          <!-- Píer de Iseltwald, Lago de Brienz, na Suíça -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/cancún_méxico.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cancún</h5>
+              <p>México</p>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+
+    </div>
+
+
+    <!-- ESCOLHA O SEU DESTINO / cards-->    
+    <br><br>
+    <h4 id="destinos" class="text-primary">Touristic destinations:</h4>
+
+    <p class="lead mb-4">Discover the most amazing destinations in the world and get ready for an unforgettable adventure full of unique experiences and breathtaking landscapes.</p> 
+        
+    <br>
+    <div class="container row mx-auto g-4 container_card">
+ <!-- mx- auto: m=margem x=dir/esq -->
+      <!-- g-4: gap/espaço entre eles -->
+
+
+      <!-- Cancún, México -->
+
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <!-- md-6 pra ficar 2 cards na mesma linha >=768px
+      col-xl-4 pra ficar 3 cards na mesma linha >=1200 px -->
+      <div class="card">
+        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" -->
+        <!-- role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+        <img class="img_cards" src="imagens/cancún_méxico.jpg" alt="Praia de Cancún, no México">
+        <!-- <title>Cancún</title> -->
+        <p class="text-center mt-1"><strong>Cancún</strong></p>
+        <p class="text-center"><small>México</small></p>
+
+        <rect width="100%" height="100%" fill="#868e96"></rect>
+        <!-- <text x="50%" y="50%" fill="#dee2e6" dy=".3em">México</text> -->
+      
+        <div class="card-header btn">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <!-- <p class="card-text">Categoria</p> -->
+
+          <!-- Veja mais fotos -->
+          <a href="#cancun" class="btn btn-outline-primary btn-sm" target="_blank">More information</a>
+          <br>
+
+          
+        </div>
+      </div>
+     </div>
+
+
+     <!--Cristo Redentor, RJ  -->
+
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        
+        <img class="img_cards" src="imagens/cristo.webp" alt="Cristo Redentor, no Rio de Janeiro, Brasil">
+        <p class="text-center mt-1"><strong>Cristo Redentor</strong></p>
+        <p class="text-center"><small>Rio de Janeiro Brazil</small></p>
+
+        <div class="card-header btn">
+          <a href="#rio" class="btn btn-outline-primary btn-sm" target="_blank">More information</a>
+          </div>
+      </div>
+     </div>
+
+     <!--Portão de Brandemburgo, Berlim, Alemanha -->
+
+   
+ 
+     <!--Namsan Tower, Seul, na Coreia do Sul -->
+     
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        <img class="img_cards" src="imagens/Namsan_Tower - Copia.jpg" alt="Subida da Torre Namsan, em Seul, na Coréia do Sul">
+        <p class="text-center mt-1"><strong>Namsan Tower</strong></p>
+        <p class="text-center"><small> Seoul, South Korea</small></p>
+
+        <div class="card-header btn">
+          <a href="#corea" class="btn btn-outline-primary btn-sm" target="_blank">More information</a>
+        </div>
+      </div>
+     </div>
+
+     
+    
+     <!--Templo do Pavilhão Dourado, em Kyoto, Japão  -->
+     
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        <img class="img_cards" src="imagens/templo_kyoto_japao.jpg" alt="Lago e o Templo do Pavilhão Dourado, em Kyoto, no Japão">
+        <p class="text-center mt-1"><strong>Golden Pavilion Temple</strong></p>
+        <p class="text-center"><small>Kyoto, Japan</small></p>
+
+        <div class="card-header btn">
+          <a href="#tokio" target="_blank">More information</a>
+          <br>
+         </div>
+      </div>
+     </div>
+
+ 
+    <!-- HISTÓRIA -->
+
+    <h1 id="história" class="text-center text-primary mt-4 mb-2"> 
+      Dream accommodations
+    
+    </h1>
+    
+    <!-- Subtítulo-->    
+    <h3 class="text-center mt-1 mb-5"></h3>
+
+    <h3 class="text-center text-primary mt-4 mb-2"> 
+      Meitetsu inn Nagoya Tokyo
+     
+     </h3>
+  
+   
+    <!-- CARROSSEL / SLIDES-->
+
+    <div class="container w-10 h-auto">
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+       
+
+        <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0001.jpg" class="d-block w-100" alt="Pão de Açúcar">
+            <div class="carousel-caption d-none d-md-block">
+  
+            </div>
+          </div>
+
+          <!-- Ilha de Jeju, na Coreia do Sul. -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0002.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+            <div class="carousel-caption d-none d-md-block">
+    
+            </div>
+          </div>
+
+         
+
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+
+    </div>
+
+
+
+
+  
+     <!-- CARROSSEL / SLIDES-->
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Seoul, South Korea
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0003.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+              
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0004.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+               
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+
+
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Rio de Janeiro Brazil
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0010.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+           
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0009.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+              
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+
+
+
+
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Cancun, Mexico
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0014.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+              
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0015.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+             
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+ <!-- FOOTER -->
+
+
+
+ <h3 class="text-center text-primary mt-4 mb-2"> 
+  Flyers
+ 
+ </h3>
+     <div class="container w-10 h-auto">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
+   
+   
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0005.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Seul</h5>
+               <p>Torre de Seúl </p>
+             </div>
+           </div>
+   
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0006.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Ilha de Jeju</h5>
+               <p>Coreia do Sul.</p>
+             </div>
+           </div>
+   
+           <!-- Píer de Iseltwald, Lago de Brienz, na Suíça -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0007.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Píer de Iseltwald</h5>
+               <p>Lago de Brienz, na Suíça.</p>
+             </div>
+           </div>
+           <div class="carousel-item mb-4">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0008.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Píer de Iseltwald</h5>
+               <p>Lago de Brienz, na Suíça.</p>
+             </div>
+           </div>
+           
+         </div>
+   
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+   
+     </div>
+   
+     
+     
+   
+   
+   <!-- TABELA COM LOCAIS MAIS VISITADOS EM 2023 -->
+
+   <h3 id="visitados" class="text-primary">ITINERARIES  </h3>
+    <p class="lead mb-5">Korea</p>
+ 
+    <div class="tabela">
+    
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Schedules </th>
+        <th scope="col">Activities </th>
+        <th scope="col">Schedules </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="table-primary">
+        <th scope="row">14:00 pm 17:00 pm Sábado 
+          7:00 pm 
+          7: 30 am del lunes 
+          7:30 am
+          8:20 am 
+          8:20 am 
+          10:00 am
+          10:00 am 10: 20 am 
+          10: 20 am 
+          11: 30 am 
+          11:30 am 
+          12: 20 pm 
+          12:20pm 
+          15:30 pm 
+          
+          
+          15:30 pm 
+          15: 50 pm 
+          15: 50 pm 
+          16: 40 pm 
+          16: 40 pm 
+          20:20 pm 
+          20:20pm 
+          20:40 pm 
+          20: 40 
+          
+          </th>
+        <td>Meeting at the Mexico City International Airport and check-in
+          plane boarding
+          Arrival at Incheon Airport (ICN)
+          Transfer to nine tree premier hotel isadong
+          Time to unpack and have breakfast at the hotel
+          Transfer to Bukchon Hanok Village
+          Visit to Bukchon Hanok Village
+          Observation of a village with traditional Korean houses
+          Visit artisan workshops
+          Transfer to the Korea Museum
+          Tour of the National Museum of Korea, South Korea
+          Transfer to Dongdaemun Design Plaza
+          Food freely
+          Visit to Dongdaemun Design Plaza
+          exhibition hall, a conference room, a design museum, the design laboratory, the academy room, the media center, the seminar room.
+          Transfer to nine tree premier hotel isadong
+          End of tour</td>
+        <td>.The tour will take place by truck
+
+
+
+
+
+
+          Metro tour
+          
+          
+          Metro tour
+          
+          
+          
+          
+          Metro tour</td>
+      </tr>
+
+      <tr>
+        <th scope="row">8:30 9:20
+          9:20am 11:30am
+          11:30 am 
+          12: 55 pm 
+          12: 55pm
+          14: 30 pm 
+          14:30 pm
+          15:20 pm 
+          15:20 pm 
+          17: 20 pm 
+          
+          
+          17:20 19:10 pm
+          19:10 20: 20
+          20: 20 
+          
+          </th>
+        <td>Activities
+          Breakfast freely
+          Gyeongbokgung:
+          Visit the Throne Room and Floating Pavilion
+          Explore Royal Living's rooms and library
+          Watch the changing of the guard
+          Movement to
+          namsangol hanok village
+          namsangol hanok village
+          Visit to the main pavilion
+          observation of traditional Korean houses called hanok.
+          Visit to the time capsule
+          Food at 우리분식 restaurant
+          (Our snacks)
+          Namsan (mountain)
+          Cable car (optional)
+          Hanbok Cultural Experience Center
+          love padlocks
+          Namsan Park
+          Seoul tower
+          Transfer back to the hotel
+          End of tour</td>
+        <td>Observaciones 
+          N.p.
+           Children (six and under), seniors (over 65) and anyone wearing hanbok are free.
+           Do not vomit
+           Free entrance
+          
+          .</td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">8: 30 am 9: 20 am 
+          9: 20 am 10: 10 am 
+          10: 10 am 
+          10: 10 am 11: 30 am
+          11:30 pm 12: 30 pm
+          12:30 pm 15: 30 pm 
+          15:30 pm 16: 20 pm 
+          16:20 pm 18:10 pm 
+          18:10 pm 20: 30 
+          20:30 pm 20: 40 pm
+          
+           </th>
+        <td>
+          Transfer to Gangnam-gu, Yeongdong-daero
+           Legacy to Gangnam-gu, Yeongdong-daero
+           Gangnam-gu, Yeongdong-daero The Starfield Library
+           Transfer to Suwon Hwaseong Fortress
+            Arrival at the Hwaseong Fortress in Suwon, tour the entire fortress full of observation towers, bastions, artillery towers, its Palace and its 4 gates; Paldalmun, Changyongmun, Janganmun and Hwaseongmun.
+           Food in hyeondabang
+           Transfer to Cheonggyecheon
+           Arrival at Cheonggyecheon
+           see the revitalized stream and landscape
+           cityscape illuminated with colorful lights.
+           Back to the hotel
+          
+          </td>
+        <td>
+          Meter
+          Wear comfortable shoes
+          Bring sunscreen
+         
+         
+          Bus or train
+          Wear comfortable shoes suitable for walking on uneven surfaces.
+          .</td>
+      </tr>
+
+      <tr>
+        <th scope="row">9: 00 am 10: 00 am
+          10: 00 am 11:10 am
+          11:10 am
+          15:00 pm 16:00 pm
+          19:00 pm 
+          19:00 pm 20:10 pm 
+          20:00 pm 
+          
+           </th>
+        <td>
+          Breakfast
+           Taken to Lotte World Park, South Korea
+           Arrival at the park
+           Food inside the park
+           End of stay in the park
+           Return to nine tree premier hotel isadong
+           Arrival at the hotel and time to pack
+          </td>
+        <td>. 
+          
+          </td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">8:00 am 9:00 am 
+          9:00 am 9: 40 am 
+          9:40 am  
+          21:40 pm  
+          
+          </th>
+        <td>Airport meeting: Incheon Airport (ICN)
+          Airport transfer
+          Airport meeting: Incheon Airport (ICN)
+          Arrival at Mexico City International Airport</td>
+        <td>.</td>
+      </tr>
+
+
+    </tbody>
+
+    
+  </table>
+  </div>
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE --><!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+ <p class="lead mb-5">Cancún   </p>
+ 
+ <div class="tabela">
+   
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th scope="col">Schedules </th>
+     <th scope="col">Activities </th>
+     <th scope="col">. </th>
+   </tr>
+ </thead>
+
+ <tbody>
+   <tr class="table-primary">
+     <th scope="row">Monday</th>
+     <td>CDMX Airport meeting point
+      Document bags and ticket registration
+      Board plane
+      Cancun Airport Arrival
+      Bus departure to Hotel
+      Arrival at Hotel La Palma (check in)
+      Buffet Breakfast
+      Time to prepare things for departure to -xcaret (change of clothes, sunscreen, etc.)
+      Arrive on the bus to exit to the park
+      Arrival at the park
+      Stay in the park (free)
+      Meal
+      Park stay
+      Bus meeting point to return to hotel
+      Arrival at the Hotel
+      Free time to take a bath/rest
+      Buffet Dinner
+      Leisure</td>
+     <td>2:00 am
+      2:00 a 4:00 am
+      5:00 am
+      7:30 am
+      8:00 am
+      9:00 am
+      9:00 a 10:00 am
+      30 minutos
+      10:30 am
+      11:10 am
+      11:10am a 2:00pm
+      2:00 a 3:00 pm
+      3:00 a 5:00 pm
+      5:00 pm
+      5:40 pm
+      5:40 a 7:00 pm
+      7:00 a 8:00 pm
+      8:00 pm 
+      
+      </td>
+   </tr>
+
+   <tr>
+     <th scope="row">Tuesday</th>
+     <td>Buffet breakfast
+      Time to prepare things for going to the beach (sunscreen, swimsuit, change of dry clothes, towel, etc.)
+      Departure to Dolphin Beach
+      Stay on the beach
+      Return to hotel
+      Free time to take a bath/rest
+      Buffet food
+      Free time at the hotel (you can use the pool, bar, gym, spa, etc.)
+      Buffet Dinner
+      Leisure</td>
+     <td>7:00 a 8:00 am
+      8:00 a 9:00 am
+      9:00 am
+      9:00 am a 2:00 pm
+      2:00 pm
+      2:00 a 3:00 pm
+      3:00 a 4:00 pm
+      4:00 a 7:00 pm
+      7:00 a 8:00 pm
+      8:00 pm 
+      
+       .</td>
+   </tr>
+
+   <tr class="table-primary">
+     <th scope="row">Wednesday</th>
+     <td>Desayuno Bufette
+      Tiempo para preparar cosas salida a Cenote de agua azul (Toalla, traje de baño, protector solar, cambio de ropa seca)
+      Salida a cenote de Agua azul
+      Llegada a cenote
+      Estancia en el Cenote  
+      Regreso al Hotel 
+      Llegada al Hotel
+      Comida bufette
+      Tiempo libre en el hotel (puede hacer uso de la alberca, barra, gym, spa etc)
+      Cena bufette
+      Tiempo libre
+      
+      </td>
+     <td>
+      7:00 a 8:00 am
+      8:00 a 9:00 am
+      9:00 am
+      10:00 am
+      10:00 am a 3:00 pm
+      3:00 pm
+      4:00 pm
+      4:00 a 5:00 pm
+      5:00 a 7:00 pm
+      7:00 a 8:00 pm
+      8:00 pm 
+      
+      </td>
+   </tr>
+
+   <tr>
+     <th scope="row"> 
+      Thursday</th>
+     <td>Buffet breakfast
+      Time to prepare things for going to the beach (sunscreen, swimsuit, change of dry clothes, towel, etc.)
+      Departure to Playa del Carmen
+      Arrival in Playa del Carmen
+      Beach Stay
+      Walk along Fifth Avenue (you can buy souvenirs)
+      Return to Hotel
+      Arrival at Hotel
+      Free time to take a bath/rest
+      Buffet food
+      Outing to buy souvenirs in the hotel area
+      Return Hotel
+      Buffet dinner
+      Leisure</td>
+     <td>7:00 a 8:00 am
+      8:00 a 9:00 am
+      9:00 am 
+      10:00 am
+      10:00 am a 12:00 pm
+      12:00 a 2:00 pm
+      2:00 pm
+      3:00 pm
+      3:00 a 4:00 pm
+      4:00 a 5:00 pm
+      5:00 a 7:00 pm
+      7:00 pm
+      7:00 a 8:00 pm
+      
+      </td>
+   </tr>
+
+
+   <tr>
+    <th scope="row"> 
+      Friday</th>
+    <td>Buffet Breakfast
+      Free time at the hotel (you can use the pool, bar, gym, spa, etc.)
+      Buffet food
+      Time to prepare for dinner/celebration (Oufty garden style)
+      Event presentation
+      Dinner
+      party celebration
+    </td>
+    <td>8:00 a 9:00 am
+      9:00 am a 3:00 pm
+      3:00 a 4:00 pm
+      4:00 a 6:00 pm
+      6:00 pm
+      6:00 a 7:00 pm
+      7:00 pm en adelante
+      
+      
+     
+     </td>
+  </tr>
+
+
+
+
+
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+<p class="lead mb-5">BRAZIL   </p>
+ 
+<div class="tabela">
+  
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th scope="col">Schedules </th>
+    <th scope="col">Activities </th>
+    <th scope="col">. </th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr class="table-primary">
+    <th scope="row">Day 1 
+
+    </th>
+    <td>2:00 to 5:00 Appointment at the City airport
+      5:00 to 7:00 Flight with dinner included and arrival in Rio de Janeiro
+      7:00 a8:00 Reception and transfer to the hotel
+      8:00 to 9:30 Buffet breakfast
+                 Free afternoon</td>
+    <td>.</td>
+  </tr>
+
+  <tr>
+    <th scope="row">Day 2</th>
+    <td>8:00 to 10:00 Buffet breakfast
+      10:00 to 10:30 transfer to Christ the Redeemer point.
+      10:30 12:00 development of activities.
+      12:00 to one:30 general restaurant corcovado.
+      1:30 to 2:00 transfer to the hotel</td>
+    <td>.</td>
+  </tr>
+
+  <tr class="table-primary">
+    <th scope="row">Day 3</th>
+    <td>7:00. to 9:00 buffet breakfast
+      9:00 to 9:20 amanhá museum
+      9:20 to 11:00 activities at the museum in Amanhá
+      11:00 11:15 selaron staircase
+      11:15 12:30 lunch at the Baby Galeto restaurant
+      12:30 to 2:00 develop activities on the selaron stairs
+      2:00 to 2:15 transfer to Sambodromo Marques de Sampucai
+      2:15 3:30 development of activities in sambodromo
+      Marquis of Sampucai
+      3:30 3:45 transfer Arcos del Apa.
+      3:45 5:30 development of activities in Arcos de la Apa
+      5:30 to 5:45 transfer to Flaca Apoteose
+      5:45 to 7:00 development of activities.
+      7:00 to 7:20 transfer to the hotel.
+      7:40 to 8:30 dinner
+      8:30 to 11:30 beach party
+     </td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <th scope="row"> 
+     Day 4</th>
+    <td>7:00 to 9:00 breakfast.
+      9:00 to 10:30 be at reception.
+      10:30 to 10:40 head to Santos Dumont Airport.
+      10:40 to 1:00 take the flight to Mexico City
+      12:00 arrival Mexico City</td>
+    <td>
+     </td>
+  </tr>
+
+
+
+ 
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+<p class="lead mb-5">Tokio   </p>
+ 
+<div class="tabela">
+  
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th scope="col">Days </th>
+    <th scope="col">Activities </th>
+    <th scope="col">. </th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr class="table-primary">
+    <th scope="row">4 days
+      Departure April 4 4:00pm
+      
+      
+      7:00
+      7:30-8:30
+      8:30-9:00
+      9:00-10:20
+      10:20-11:40
+      11:40-1:00
+      1:00-2:20
+      
+      
+      
+      
+      8:00-9:00
+      10:00-11:00
+      11:00-1:00
+      1:00-3:00
+      3:00-5:00
+      
+      
+      8:00-9:00
+      9:21-11:00
+      11:00-2:00
+      
+      Ends 2:00 pm
+       
+      8:00-9:00
+      9:00-10:00
+      10:00-1:00
+      1:00-8:00
+      
+      
+      6:00AM-7:00AM
+      7:00-10:00
+      April 10</th>
+    <td>meeting point, airport 1 pm
+      Arrival April 5 7:00am
+      DAY ONE
+      Arrival at Tokyo airport
+      Unpack
+      breakfast
+      meiji shrine
+      tokyo imperial palace
+      Asakusa
+      Sense hee
+      REST OF THE DAY FREE
+      DAY TWO
+      Breakfast in hotel
+      ASI Lake Cruise
+      Lunch at the foot of Mount Fuji
+      Hakone Shrine
+      odawara station
+      DAY THREE
+      Breakfast in hotel
+      Visit to Hachiko memorial
+      Japanese gastronomic tour (70's)
+      Rest of the day free
+      DAY FOUR
+      Breakfast in hotel
+      Tokyo Tower
+      Ryogok sumo
+      Universal studio (Mario and Luigi house)
+      I RETURN TO MEXICO
+      Meeting in the lobby
+      Airport(board)
+      Arrival in Mexico</td>
+    <td>Direct flight
+      Return10 April
+      Transportation
+      Designated van
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      The tour will take place by bullet train
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      40 MN round trip to Tokyo.
+      
+      
+      21 minutes by bullet train
+      
+      
+      
+      
+      bullet train for
+      Kyoto
+      2 hours
+      
+      
+      
+      
+      
+      
+      1:00 am.</td>
+  </tr>
+
+
+ 
+<!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+
+ 
+<div class="ficha">
+  <h1 id="cancun" >CANCÚN.
+  </h1>
+  <div class="contenido">
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>Packages to Cancun include flight plus hotel with an all-inclusive meal plan. This means that you can access food and drinks in the hotel restaurants unlimitedly.
+            The main attraction of Cancun is clearly its beaches since being located right on the coast and having such a beautiful climate, they are characterized by having beautiful white sands and crystal clear water with different shades of blue.</p>
+      </div>
+      <div class="atributo">
+          <h2></h2>
+          <p>We are going to visit many different beach options, some much prettier than others, some public and others private which may be a little more difficult to access.
+            Women Island
+            Dolphin Beach
+            Turtle Beach
+            Whale Beach
+            Carmen beach.</p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>.
+            </p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p> The main tourist attractions that we are going to visit are:
+            Cenote Dos Ojos
+            Xel-Há Park
+            Xcaret Park
+            Palapas Park
+            Blue Cenote
+            Mayan Museum of Cancun
+            Tulum Archaeological Zone.
+            In addition to living incredible experiences at night, we will enjoy the most fun after-hours you have ever attended with a free drink bar.</p>
+      </div>
+  </div>
+</div>
+  
+  
+  <!-- Subtítulo11111111111111111111111111111111111111111111111111111111111111111111111111111111-->   
+  <!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+
+ 
+<div class="ficha">
+  <h1 id="cancun" >Tokio.
+  </h1>
+  <div class="contenido">
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>717 / 5,000
+            Resultados de traducción
+            Traducción
+            In this 4-day package with a round trip flight from Mexico to Tokyo, we offer a tourist ticket, accommodation, transportation to the Tokyo hotel, breakfast at the hotel during the 4 days of stay, visits to different destinations such as;</p>
+      </div>
+      <div class="atributo">
+          <h2></h2>
+          <p> Meiji Shrine, Tokyo Imperial Palace, Asakusa, Sanso Ji, ASI Lake Cruise, lunch at the foot of Mount Fuji, Hakone Shrine, Odawara Station, a 70's inspired Japanese food tour, Hachiko Memorial, Tokyo Tower, Ryogok Sumo </p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>.
+            ,universal studios (Mario and Luigi's house). The itinerary specifies the rest of the days free so you can get to know the city more freely.</p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>Transportation to all destinations is by bullet train which is included in the package.</p>
+      </div>
+  </div>
+</div>
+  
+  
+  <!-- Subtítulo11111111111111111111111111111111111111111111111111111111111111111111111111111111-->   
+  
+  <!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+
+ 
+<div class="ficha">
+  <h1 id="cancun" >Korea.
+  </h1>
+  <div class="contenido">
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>We will visit Seoul, which has been the capital of Korea for 600 years. It is divided into two parts due to the course of the Hangang River: in the northern part all the history and culture is concentrated, while the southern part is known as the commercial area. This creates a contrast where the skyscrapers stand out over the Buddhist temples.
+            Afterwards, meet your guide and head out for a full day of exploring the South Korean capital at Jihachul, the local subway. We start the day by visiting Gyeongbokgung Palace, this "Brilliant Palace of Happiness" is one of the five palaces of the Choson (Joseon) dynasty. The visit includes the Folklore Museum and its collection of objects from traditional Korean life. Next, we will visit the Jogyesa Temple, one of the largest in the city and the center of the Jogyejong Buddhist order, which promotes Zen meditation. Lunch at a local restaurant where we will taste a delicious Bibimbap (bowl of rice with vegetables and meat), we will walk through the Bukchon district, this district, nicknamed the "Northern Village", is home to about 900 traditional Korean houses and promises a unique cultural immersion in ancient Korea. Next we will take a tour of Insadong Street, which is full of antique shops and art galleries. We will end with an incredible entertainment show on stage "Cooking Nanta", this non-verbal comedy, animated to the rhythm of kitchen utensils, combines traditional music, much more modern and intelligently mixes the genres of comedy and drama.</p>
+      </div>
+      <div class="atributo">
+          <h2></h2>
+          <p>
+            Departure with the guide to the KTX train that will take us to Gyeongju, the spiritual and cultural capital of Korea. We will take a tour of the city, what is known as the “Museum without walls”. This ancient capital of the Shilla Kingdom was declared a UNESCO World Heritage Site in 2000. We will visit the Bulkugsa Temple, then tour the mound park dotted with the 23 tombs of the rulers of the Shilla Kingdom and their families and visit the tomb of the "Celestial Horse". We will continue visiting the tombs of Noseo-dong and make a final stop at the oldest observatory in the Far East, the Cheomseongdae tower built in the year 634, where royal astronomers studied the movements of the stars and predicted eclipses of the sun and moon.
+          We will visit the cultural village of </p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>.
+            Gamcheon, an old neighborhood located on a hill. Here, houses were built by people fleeing war, the last enclave during the Korean War. Today, it is an artistic town decorated with murals and sculptures created by residents. We will make a stop at the United Nations Memorial Cemetery, the only one in the world, in fact, it has been managed by the United Nations since 1960. This place pays tribute to the 37,895 members of the UN forces who died in the War of Korea between 1950 and 1953. Lunch at a local restaurant.</p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p> Next we will walk through the Jagalchi fish market and the international market, where all kinds of products are sold.</p>
+      </div>
+  </div>
+</div>
+  
+  
+  <!-- Subtítulo11111111111111111111111111111111111111111111111111111111111111111111111111111111-->   
+  
+  <!-- 11111111111111111111111111111111111111111111111111111111111111MANUAL DO VIAJANTE -->
+
+ 
+<div class="ficha">
+  <h1 id="cancun" >BRAZIL RIO DE JANEIRO.
+  </h1>
+  <div class="contenido">
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>Meet at the Mexico City airport to board the flight to Rio de Janeiro. Dinner and night on board.
+            Arrival, reception and transfer to your hotel by our The Dream of paradise correspondent We will visit the most famous monuments of the city and see the natural beauty of Rio de Janeiro from the top of Corcovado.</p>
+      </div>
+      <div class="atributo">
+          <h2></h2>
+          <p>
+            Arrival, reception and transfer to your hotel by our The Dream of paradise correspondent We will visit the most famous monuments of the city and see the natural beauty of Rio de Janeiro from the top of Corcovado. After a panoramic ride along the Rodrigo de Freitas Lagoon, and the beaches of Leblon, Ipanema and Copacabana, passengers arrive at the boarding point to climb Corcovado Hill. Upon reaching the top, passengers can use the panoramic elevators or escalators to reach the feet of Christ. From there, passengers can enjoy a panoramic and incredible view of the "Wonderful City". Then there is a stop for lunch at a Rodizio-style steakhouse. </p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p>. The tour also includes a visit to see the city's historical monuments: The Metropolitan Cathedral where Pope Francis gave a mass during his visit to the City in 2013 and the famous Selarón staircase. On this tour, passengers enjoy a wonderful view of Guanabara Bay and Rio de Janeiro by climbing to the top of the Sugar Loaf mountain in the modern bubble-shaped cable cars. The first cable car takes passengers to the top of Urca Hill, which rises 215 meters above sea level and offers spectacular views of the entire bay and its surrounding islands. 
+            </p>
+      </div>
+      <div class="atributo">
+          <h2>.:</h2>
+          <p> The tour also includes a visit to see the city's historical monuments: The Metropolitan Cathedral where Pope Francis gave a mass during his visit to the City in 2013 and the famous Selarón staircase. On this tour, passengers enjoy a wonderful view of Guanabara Bay and Rio de Janeiro by climbing to the top of the Sugar Loaf mountain in the modern bubble-shaped cable cars. The first cable car takes passengers to the top of Urca Hill, which rises 215 meters above sea level and offers spectacular views of the entire bay and its surrounding islands. </div>
+  </div>
+</div>
+  
+  
+  <!-- Subtítulo11111111111111111111111111111111111111111111111111111111111111111111111111111111-->   
+  
+  
+  <!-- Subtítulo11111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+  <div class="card">
+    <a  id="red" href="https://www.instagram.com/thedreams_of_paradise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+    <img class="img_cards" src="imagens/1233.jpg" alt="Cristo Redentor, no Rio de Janeiro, Brasil">
+    <p class="text-center mt-1"><strong>Social networks</strong></p>
+  </a>
+    <p class="text-center"><small>.</small></p>
+ 
+    <div class="card-header btn">
+      <a href="https://www.instagram.com/thedreams_of_paradise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">   More information</a>
+      </div>
+  </div>
+ </div>
+
+
+
+ 
+  <!-- CARROSSEL / SLIDES-->
+
+  <!-- AUTORA -->
+    
+  <!-- text-muted deixa o texto opaco -->
+ 
+
+
+
+
+  <!-- Pra fazer a foto mudar da Seção Manual do Viajante -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Esse trabalho foi feito por Luciene Lima -->
